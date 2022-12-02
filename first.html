@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first page</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Color-Change-Game</h1>
+        </header>
+
+        
+    <p>Plese use this below button to change color.
+    </p>
+    <button class="button" type="button">Click Here</button>
+    <script type="text/javascript">
+        var color = ["#edf756","#ffa8B6","#a28089","#fbe3e8","#ebf6f5","#f2d53c","#c89666"];
+        var i = 0;
+        document.querySelector("button").addEventListener("click",function(){
+            i = i<color.length ? ++i : 0;
+        document.querySelector("body").style.background = color[i]
+        })
+    </script>
+    </div>
+    <div class="square">
+        <div class="circle">
+            
+        </div>
+    </div>
+    <div class="circle2">
+            
+    </div>
+</body>
+</html>
