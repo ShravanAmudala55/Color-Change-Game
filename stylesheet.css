@@ -1,101 +1,97 @@
-body{
-    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
-    font-size: 81.25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f2eadf;
+body {
+  font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
+  font-size: 81.25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2eadf;
+}
+h1 {
+  text-align: center;
+  text-shadow: 1px 2px #837f7f;
+  font-family: "Lucida Console", Times, serif;
+}
+p {
+  font-family: "Lucida Console", Times, serif;
+  padding: 3px;
 
+  text-align: center;
 }
-h1{
-    text-align: center;
-    text-shadow: 1px 2px #837f7f;
-    font-family: "Lucida Console", Times, serif;
+button {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  border-radius: 13px;
+  padding: 6px 40px;
+  position: relative;
+  text-transform: uppercase;
+  background: #ffffff;
+  box-shadow: 0px 07px 0px 0px rgb(77, 115, 138);
+  cursor: pointer;
 }
-p{
-    font-family: "Lucida Console", Times, serif;
-    padding: 3px;
-    
-    text-align: center;
-}
-button{
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    border-radius: 13px;
-    padding: 6px 40px;
-    position: relative;
-    text-transform: uppercase;
-    background:#ffffff;
-    box-shadow: 0px 07px 0px 0px rgb(77, 115, 138);
-    cursor: pointer;
-}
-button:hover{
-    background-color: rgb(14, 169, 94);
-}
-
-button:active{
-    
-    transform: translateY(7px);
-    box-shadow: 0px 1px 0px 0px rgb(67, 88, 93);
+button:hover {
+  background-color: rgb(14, 169, 94);
 }
 
-header{
-    position: relative;
-    background: #ca9e9e;
-    border-radius: 13px;
-    padding: 5px 30px;
-    display: flex;
-    align-items: center;
-    border: 2px solid #ffffffc7;
+button:active {
+  transform: translateY(7px);
+  box-shadow: 0px 1px 0px 0px rgb(67, 88, 93);
 }
 
+header {
+  position: relative;
+  background-color: #ca9e9e;
+  border-radius: 13px;
+  padding: 5px 30px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffffffc7;
+}
 
-
-.circle{
-    width: 30px;
-    height: 30px;
-    background: #7c677f5d;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 20;
-    left: 20;
-    right: 0;
-    overflow: hidden;
-    margin: auto;
-    -webkit-animation: circle 5s linear infinite;
-    animation: circle 5s linear infinite;
+.circle {
+  width: 30px;
+  height: 30px;
+  background: #7c677f5d;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 20;
+  left: 20;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: circle 5s linear infinite;
+  animation: circle 5s linear infinite;
 }
-.circle2{
-    width: 35px;
-    height: 35px;
-    background: #7c677f4b;
-    border-radius: 50%;
-    position: absolute;
-    top: 20;
-    bottom:0;
-    left: 0;
-    right: 10;
-    overflow: hidden;
-    margin: auto;
-    -webkit-animation: circle 7s linear infinite;
-    animation: circle 7s linear infinite;
+.circle2 {
+  width: 35px;
+  height: 35px;
+  background: #7c677f4b;
+  border-radius: 50%;
+  position: absolute;
+  top: 20;
+  bottom: 0;
+  left: 0;
+  right: 10;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: circle 7s linear infinite;
+  animation: circle 7s linear infinite;
 }
-@-webkit-keyframes circle{
-    0%{
-        transform: rotate(0deg)translate(-165px)rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg)translate(-165px)rotate(-360deg);
-    }
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+  }
 }
-@-webkit-keyframes circle2{
-    100%{
-        transform: rotate(0deg)translate(-165px)rotate(0deg);
-    }
-    0%{
-        transform: rotate(-360deg)translate(-165px)rotate(360deg);
-    }
+@-webkit-keyframes circle2 {
+  100% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  0% {
+    transform: rotate(-360deg) translate(-165px) rotate(360deg);
+  }
 }
